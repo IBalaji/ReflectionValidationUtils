@@ -10,8 +10,8 @@ import validators.UserValidator;
 public class TestReflection {
 
 	public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
-		User user = new User("Balaji", "Iyengar", "Mumbai", 
-				new ArrayList<String>(){{add("asd");add("asdasd");}}, 24 , new Date());
+		User user = new User("asd", "asd", "asd", 
+				new ArrayList<String>(){{add("asd");add("asdasd");}}, 23 , new Date());
 	
 		Map<String,String> fieldWithErrorDescMap = UserValidator.checkForErrors(user);
 		
