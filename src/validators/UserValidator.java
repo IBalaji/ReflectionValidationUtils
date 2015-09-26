@@ -9,7 +9,7 @@ import java.util.Map;
 public class UserValidator {
 
 	public static Map<String, String> checkForErrors(Object obj) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
-		Map errorMap = new HashMap<String, String>();
+		Map<String, String> errorMap = new HashMap<String, String>();
 		
 		if(null != obj){
 			
